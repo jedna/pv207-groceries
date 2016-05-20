@@ -1,1 +1,3 @@
-# pv207-groceries
+# PV207-groceries
+
+jBPM project illustrating business process implementation
