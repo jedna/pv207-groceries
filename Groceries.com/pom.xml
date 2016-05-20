@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>PV207</groupId>
+  <artifactId>Groceries.com</artifactId>
+  <version>1.0</version>
+  <packaging>kjar</packaging>
+  <name>Groceries.com</name>
+  <description>E-commerce with groceries</description>
+  <repositories>
+    <repository>
+      <id>guvnor-m2-repo</id>
+      <name>Guvnor M2 Repo</name>
+      <url>http://192.168.99.100:8080/jbpm-console/maven2/</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-maven-plugin</artifactId>
+        <version>6.4.0.Final</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
