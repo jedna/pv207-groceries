@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_sFUxgCESEeas_fzBo-Er5Q" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_Vo5yUCETEeas_fzBo-Er5Q" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_orderItem" structureRef="pv207.groceries.com.StoreOrder"/>
   <bpmn2:itemDefinition id="__9C3200D7-275F-42DB-A5ED-87AD1F657060_productInputXItem" structureRef="pv207.groceries.com.Product"/>
   <bpmn2:itemDefinition id="__9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:process id="Groceries.CreateOrder" drools:packageName="org.jbpm" drools:version="1.0" name="CreateOrder" isExecutable="true">
+    <bpmn2:property id="order" itemSubjectRef="_orderItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -19,20 +21,24 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_3F44612A-8AEE-43FA-80F5-F236A20B535F</bpmn2:incoming>
       <bpmn2:outgoing>_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_sFVYkCESEeas_fzBo-Er5Q">
+      <bpmn2:ioSpecification id="_Vo7AcCETEeas_fzBo-Er5Q">
         <bpmn2:dataInput id="_9C3200D7-275F-42DB-A5ED-87AD1F657060_productInputX" drools:dtype="pv207.groceries.com.Product" itemSubjectRef="__9C3200D7-275F-42DB-A5ED-87AD1F657060_productInputXItem" name="product"/>
         <bpmn2:dataInput id="_9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputX" drools:dtype="Object" itemSubjectRef="__9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_sFVYkSESEeas_fzBo-Er5Q">
+        <bpmn2:inputSet id="_Vo7AcSETEeas_fzBo-Er5Q">
           <bpmn2:dataInputRefs>_9C3200D7-275F-42DB-A5ED-87AD1F657060_productInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_sFV_oCESEeas_fzBo-Er5Q"/>
+        <bpmn2:outputSet id="_Vo7ngCETEeas_fzBo-Er5Q"/>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_sFV_oSESEeas_fzBo-Er5Q">
+      <bpmn2:dataInputAssociation id="_Vo7ngSETEeas_fzBo-Er5Q">
+        <bpmn2:sourceRef>order</bpmn2:sourceRef>
+        <bpmn2:targetRef>_9C3200D7-275F-42DB-A5ED-87AD1F657060_productInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Vo7ngiETEeas_fzBo-Er5Q">
         <bpmn2:targetRef>_9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_sFV_oiESEeas_fzBo-Er5Q">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_sFV_oyESEeas_fzBo-Er5Q">true</bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_sFV_pCESEeas_fzBo-Er5Q">_9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_Vo7ngyETEeas_fzBo-Er5Q">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Vo8OkCETEeas_fzBo-Er5Q">true</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Vo8OkSETEeas_fzBo-Er5Q">_9C3200D7-275F-42DB-A5ED-87AD1F657060_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
     </bpmn2:userTask>
@@ -47,54 +53,54 @@
     </bpmn2:endEvent>
     <bpmn2:sequenceFlow id="_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_9C3200D7-275F-42DB-A5ED-87AD1F657060" targetRef="_C5E7443C-CCF3-4C30-AD6D-33331779E76E"/>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_sFWmsCESEeas_fzBo-Er5Q">
-    <bpmndi:BPMNPlane id="_sFWmsSESEeas_fzBo-Er5Q" bpmnElement="Groceries.CreateOrder">
-      <bpmndi:BPMNShape id="_sFXNwCESEeas_fzBo-Er5Q" bpmnElement="processStartEvent">
+  <bpmndi:BPMNDiagram id="_Vo81oCETEeas_fzBo-Er5Q">
+    <bpmndi:BPMNPlane id="_Vo9csCETEeas_fzBo-Er5Q" bpmnElement="Groceries.CreateOrder">
+      <bpmndi:BPMNShape id="_Vo9csSETEeas_fzBo-Er5Q" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="120.0" y="165.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_sFXNwSESEeas_fzBo-Er5Q" bpmnElement="_9C3200D7-275F-42DB-A5ED-87AD1F657060">
+      <bpmndi:BPMNShape id="_Vo9csiETEeas_fzBo-Er5Q" bpmnElement="_9C3200D7-275F-42DB-A5ED-87AD1F657060">
         <dc:Bounds height="80.0" width="100.0" x="212.0" y="140.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="_sFXNwiESEeas_fzBo-Er5Q" bpmnElement="_3F44612A-8AEE-43FA-80F5-F236A20B535F">
+      <bpmndi:BPMNEdge id="_Vo9csyETEeas_fzBo-Er5Q" bpmnElement="_3F44612A-8AEE-43FA-80F5-F236A20B535F">
         <di:waypoint xsi:type="dc:Point" x="135.0" y="180.0"/>
         <di:waypoint xsi:type="dc:Point" x="262.0" y="180.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="_sFXNwyESEeas_fzBo-Er5Q" bpmnElement="_C5E7443C-CCF3-4C30-AD6D-33331779E76E">
+      <bpmndi:BPMNShape id="_Vo-DwCETEeas_fzBo-Er5Q" bpmnElement="_C5E7443C-CCF3-4C30-AD6D-33331779E76E">
         <dc:Bounds height="28.0" width="28.0" x="408.0" y="166.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="_sFXNxCESEeas_fzBo-Er5Q" bpmnElement="_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C">
+      <bpmndi:BPMNEdge id="_Vo-DwSETEeas_fzBo-Er5Q" bpmnElement="_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C">
         <di:waypoint xsi:type="dc:Point" x="262.0" y="180.0"/>
         <di:waypoint xsi:type="dc:Point" x="422.0" y="180.0"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_sFX00CESEeas_fzBo-Er5Q" type="BPSimData">
+  <bpmn2:relationship id="_Vo-DwiETEeas_fzBo-Er5Q" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="min"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C" id="_sFX00SESEeas_fzBo-Er5Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C3D02E01-15EF-4B11-8F6D-A54AE708FC2C" id="_Vo-q0CETEeas_fzBo-Er5Q">
             <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
               <bpsim:Probability xsi:type="bpsim:Parameter">
                 <bpsim:FloatingParameter value="100.0"/>
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3F44612A-8AEE-43FA-80F5-F236A20B535F" id="_sFX00iESEeas_fzBo-Er5Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3F44612A-8AEE-43FA-80F5-F236A20B535F" id="_Vo-q0SETEeas_fzBo-Er5Q">
             <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
               <bpsim:Probability xsi:type="bpsim:Parameter">
                 <bpsim:FloatingParameter value="100.0"/>
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C5E7443C-CCF3-4C30-AD6D-33331779E76E" id="_sFX00yESEeas_fzBo-Er5Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C5E7443C-CCF3-4C30-AD6D-33331779E76E" id="_Vo_R4CETEeas_fzBo-Er5Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="processStartEvent" id="_sFYb4CESEeas_fzBo-Er5Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="processStartEvent" id="_Vo_R4SETEeas_fzBo-Er5Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
@@ -106,7 +112,7 @@
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9C3200D7-275F-42DB-A5ED-87AD1F657060" id="_sFYb4SESEeas_fzBo-Er5Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9C3200D7-275F-42DB-A5ED-87AD1F657060" id="_Vo_48CETEeas_fzBo-Er5Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
@@ -129,7 +135,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_sFUxgCESEeas_fzBo-Er5Q</bpmn2:source>
-    <bpmn2:target>_sFUxgCESEeas_fzBo-Er5Q</bpmn2:target>
+    <bpmn2:source>_Vo5yUCETEeas_fzBo-Er5Q</bpmn2:source>
+    <bpmn2:target>_Vo5yUCETEeas_fzBo-Er5Q</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
