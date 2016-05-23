@@ -1,0 +1,35 @@
+
+<form id="1480394196">
+<property name="name" value="Groceries.CreateOrder-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="order_products" bag-type="pv207.groceries.com.Product" type="MultipleSubform" id="184108360">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;products (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/products"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="0" name="order_dateCreated" type="InputDate" id="240937090">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dateCreated (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/dateCreated"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="3" name="order_total" type="InputTextDouble" id="2127136464">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;total (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/total"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="1" name="order_orderNumber" type="InputTextInteger" id="244667013">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;orderNumber (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/orderNumber"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="order" value="pv207.groceries.com.StoreOrder" id="order"/>
+</form>
