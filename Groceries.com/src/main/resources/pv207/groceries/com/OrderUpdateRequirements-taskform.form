@@ -1,0 +1,14 @@
+
+<form id="2144304697">
+<property name="name" value="OrderUpdateRequirements-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="customer_requirement" type="InputText" id="1147577577">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;customer_requirement (customer_requirement)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="customer_requirement"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="customer_requirement" value="java.lang.String" id="customer_requirement"/>
+</form>
