@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>PV207</groupId>
-  <artifactId>Groceries.com</artifactId>
-  <version>1.0</version>
+  <artifactId>Groceries</artifactId>
+  <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>Groceries.com</name>
   <description>E-commerce with groceries</description>
