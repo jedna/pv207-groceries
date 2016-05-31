@@ -1,0 +1,9 @@
+package pv207.groceries.com;
+
+import java.lang.Number;
+
+rule "OrderUpdateNotEligible"
+	dialect "mvel"
+	when
+	then
+end
