@@ -1,0 +1,78 @@
+
+<form id="1528729951">
+<property name="name" value="DeliveryAddressUpdate-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="address" type="InputText" id="1650687689">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;address (address)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="address"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="order_dateCreated" type="InputDate" id="1865365152">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dateCreated (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/dateCreated"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="order_deliveryInfo" type="InputText" id="1579253372">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deliveryInfo (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/deliveryInfo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="order_editable" type="CheckBox" id="2012821209">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;editable (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/editable"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="order_locked" type="CheckBox" id="2030575414">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;locked (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/locked"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="5" name="order_orderNumber" type="InputTextInteger" id="999910728">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;orderNumber (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/orderNumber"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="6" name="order_paymentInfo" type="InputText" id="1671084631">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;paymentInfo (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/paymentInfo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="order_products" bag-type="pv207.groceries.com.Product" type="MultipleSubform" id="1173106798">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;products (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/products"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="8" name="order_state" type="InputText" id="426413888">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="order_total" type="InputTextDouble" id="827082953">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;total (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="order/total"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="address" value="java.lang.String" id="address"/>
+<dataHolder inputId="order" name="#0000A0" type="dataModelerEntry" outId="" value="pv207.groceries.com.StoreOrder" id="order"/>
+</form>
