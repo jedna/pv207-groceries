@@ -9,14 +9,20 @@ public class StoreOrder implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Order number")
+   @org.kie.api.definition.type.Label("Order number")
    private java.lang.Integer orderNumber;
-   @org.kie.api.definition.type.Label(value = "Order creation date")
+   @org.kie.api.definition.type.Label("Order creation date")
    private java.util.Date dateCreated;
-   @org.kie.api.definition.type.Label(value = "Order products")
+   @org.kie.api.definition.type.Label("Order products")
    private java.util.List<pv207.groceries.com.Product> products;
-   @org.kie.api.definition.type.Label(value = "Order total")
+   @org.kie.api.definition.type.Label("Order total")
    private java.lang.Double total;
+
+   @org.kie.api.definition.type.Label(value = "State of order")
+   private java.lang.String state;
+
+   @org.kie.api.definition.type.Label(value = "Is order locked?")
+   private java.lang.Boolean locked;
 
    public StoreOrder()
    {
@@ -62,15 +68,36 @@ public class StoreOrder implements java.io.Serializable
       this.total = total;
    }
 
-   public StoreOrder(java.lang.Integer orderNumber,
-         java.util.Date dateCreated,
+   public java.lang.String getState()
+   {
+      return this.state;
+   }
+
+   public void setState(java.lang.String state)
+   {
+      this.state = state;
+   }
+
+   public java.lang.Boolean getLocked()
+   {
+      return this.locked;
+   }
+
+   public void setLocked(java.lang.Boolean locked)
+   {
+      this.locked = locked;
+   }
+
+   public StoreOrder(java.lang.Integer orderNumber, java.util.Date dateCreated,
          java.util.List<pv207.groceries.com.Product> products,
-         java.lang.Double total)
+         java.lang.Double total, java.lang.String state, java.lang.Boolean locked)
    {
       this.orderNumber = orderNumber;
       this.dateCreated = dateCreated;
       this.products = products;
       this.total = total;
+      this.state = state;
+      this.locked = locked;
    }
 
 }
