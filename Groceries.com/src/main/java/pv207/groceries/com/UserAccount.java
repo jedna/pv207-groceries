@@ -9,12 +9,15 @@ public class UserAccount implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Referrer")
+   @org.kie.api.definition.type.Label("Referrer")
    private java.lang.String referrer;
-   @org.kie.api.definition.type.Label(value = "Confirmed")
+   @org.kie.api.definition.type.Label("Confirmed")
    private java.lang.Boolean confirmed;
+
+   @org.kie.api.definition.type.Label(value = "City")
+   private java.lang.String city;
 
    public UserAccount()
    {
@@ -50,12 +53,23 @@ public class UserAccount implements java.io.Serializable
       this.confirmed = confirmed;
    }
 
+   public java.lang.String getCity()
+   {
+      return this.city;
+   }
+
+   public void setCity(java.lang.String city)
+   {
+      this.city = city;
+   }
+
    public UserAccount(java.lang.String name, java.lang.String referrer,
-         java.lang.Boolean confirmed)
+         java.lang.Boolean confirmed, java.lang.String city)
    {
       this.name = name;
       this.referrer = referrer;
       this.confirmed = confirmed;
+      this.city = city;
    }
 
 }
