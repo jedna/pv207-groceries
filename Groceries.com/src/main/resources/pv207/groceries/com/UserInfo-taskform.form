@@ -3,25 +3,11 @@
 <property name="name" value="UserInfo-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="p_user_confirmed" type="CheckBox" id="1060081705">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;confirmed (p_user)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="user/confirmed"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="1" name="p_user_name" type="InputText" id="1930857917">
+<field position="0" name="p_user_name" type="InputText" id="1930857917">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;name (p_user)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="user/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="2" name="p_user_referrer" type="InputText" id="1835909354">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;referrer (p_user)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="user/referrer"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="user" value="pv207.groceries.com.UserAccount" id="p_user"/>
