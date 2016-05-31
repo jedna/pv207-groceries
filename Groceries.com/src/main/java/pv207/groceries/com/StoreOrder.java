@@ -18,11 +18,14 @@ public class StoreOrder implements java.io.Serializable
    @org.kie.api.definition.type.Label("Order total")
    private java.lang.Double total;
 
-   @org.kie.api.definition.type.Label(value = "State of order")
+   @org.kie.api.definition.type.Label("State of order")
    private java.lang.String state;
 
-   @org.kie.api.definition.type.Label(value = "Is order locked?")
+   @org.kie.api.definition.type.Label("Is order locked?")
    private java.lang.Boolean locked;
+
+   @org.kie.api.definition.type.Label(value = "Is order editable?")
+   private java.lang.Boolean editable;
 
    public StoreOrder()
    {
@@ -88,9 +91,20 @@ public class StoreOrder implements java.io.Serializable
       this.locked = locked;
    }
 
+   public java.lang.Boolean getEditable()
+   {
+      return this.editable;
+   }
+
+   public void setEditable(java.lang.Boolean editable)
+   {
+      this.editable = editable;
+   }
+
    public StoreOrder(java.lang.Integer orderNumber, java.util.Date dateCreated,
          java.util.List<pv207.groceries.com.Product> products,
-         java.lang.Double total, java.lang.String state, java.lang.Boolean locked)
+         java.lang.Double total, java.lang.String state,
+         java.lang.Boolean locked, java.lang.Boolean editable)
    {
       this.orderNumber = orderNumber;
       this.dateCreated = dateCreated;
@@ -98,6 +112,7 @@ public class StoreOrder implements java.io.Serializable
       this.total = total;
       this.state = state;
       this.locked = locked;
+      this.editable = editable;
    }
 
 }
