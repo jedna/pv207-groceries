@@ -9,12 +9,15 @@ public class Product implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Product name")
+   @org.kie.api.definition.type.Label("Product name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Product price")
+   @org.kie.api.definition.type.Label("Product price")
    private java.lang.Double price;
-   @org.kie.api.definition.type.Label(value = "Product ID")
+   @org.kie.api.definition.type.Label("Product ID")
    private java.lang.Integer id;
+
+   @org.kie.api.definition.type.Label(value = "Quantity")
+   private java.lang.Integer quantity;
 
    public Product()
    {
@@ -50,12 +53,23 @@ public class Product implements java.io.Serializable
       this.id = id;
    }
 
+   public java.lang.Integer getQuantity()
+   {
+      return this.quantity;
+   }
+
+   public void setQuantity(java.lang.Integer quantity)
+   {
+      this.quantity = quantity;
+   }
+
    public Product(java.lang.String name, java.lang.Double price,
-         java.lang.Integer id)
+         java.lang.Integer id, java.lang.Integer quantity)
    {
       this.name = name;
       this.price = price;
       this.id = id;
+      this.quantity = quantity;
    }
 
 }
