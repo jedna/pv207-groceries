@@ -1,0 +1,86 @@
+
+<form id="1551175316">
+<property name="name" value="Groceries.Orderchangerequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="customer_requirement" type="InputText" id="649961630">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;customer_requirement (customer_requirement)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="customer_requirement"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="order_dateCreated" type="InputDate" id="627141596">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dateCreated (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/dateCreated"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="order_editable" type="CheckBox" id="1611763795">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;editable (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/editable"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="order_locked" type="CheckBox" id="503148193">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;locked (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/locked"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="order_orderNumber" type="InputTextInteger" id="1398876030">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;orderNumber (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/orderNumber"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="5" name="order_products" bag-type="pv207.groceries.com.Product" type="MultipleSubform" id="1765578899">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;products (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/products"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="6" name="order_state" type="InputText" id="537229572">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="order_total" type="InputTextDouble" id="856058320">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;total (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/total"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="8" name="order_number" type="InputTextInteger" id="1700009685">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;order_number (order_number)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order_number"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="9" name="order_deliveryInfo" type="InputText" id="2002700657">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deliveryInfo (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/deliveryInfo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="order_paymentInfo" type="InputText" id="1358299617">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;paymentInfo (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/paymentInfo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="customer_requirement" value="java.lang.String" id="customer_requirement"/>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="order" value="pv207.groceries.com.StoreOrder" id="order"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="order_number" value="java.lang.Integer" id="order_number"/>
+</form>
