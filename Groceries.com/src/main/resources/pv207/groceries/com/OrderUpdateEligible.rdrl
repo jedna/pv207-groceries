@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "OrderUpdateEligible"
 	dialect "mvel"
+	ruleflow-group "order-handling"
 	when
 		o : StoreOrder( locked == false && state != "shipped" )
 	then
