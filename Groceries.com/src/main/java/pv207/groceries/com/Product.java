@@ -13,10 +13,7 @@ public class Product implements java.io.Serializable
    private java.lang.String name;
    @org.kie.api.definition.type.Label("Product price")
    private java.lang.Double price;
-   @org.kie.api.definition.type.Label("Product ID")
-   private java.lang.Integer id;
-
-   @org.kie.api.definition.type.Label(value = "Quantity")
+   @org.kie.api.definition.type.Label("Quantity")
    private java.lang.Integer quantity;
 
    public Product()
@@ -43,16 +40,6 @@ public class Product implements java.io.Serializable
       this.price = price;
    }
 
-   public java.lang.Integer getId()
-   {
-      return this.id;
-   }
-
-   public void setId(java.lang.Integer id)
-   {
-      this.id = id;
-   }
-
    public java.lang.Integer getQuantity()
    {
       return this.quantity;
@@ -64,11 +51,10 @@ public class Product implements java.io.Serializable
    }
 
    public Product(java.lang.String name, java.lang.Double price,
-         java.lang.Integer id, java.lang.Integer quantity)
+         java.lang.Integer quantity)
    {
       this.name = name;
       this.price = price;
-      this.id = id;
       this.quantity = quantity;
    }
 
