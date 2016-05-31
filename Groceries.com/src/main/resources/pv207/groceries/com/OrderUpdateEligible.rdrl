@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "OrderUpdateEligible"
 	dialect "mvel"
 	when
-		StoreOrder( state != "shipped" )
-		StoreOrder( locked == false )
+		o : StoreOrder( locked == false && state != "shipped" )
 	then
+		o.setEditable( true )
 end
