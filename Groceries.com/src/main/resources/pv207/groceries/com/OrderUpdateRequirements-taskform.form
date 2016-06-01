@@ -3,22 +3,15 @@
 <property name="name" value="OrderUpdateRequirements-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="customer_requirement" type="InputText" id="520016998">
+<field position="0" name="p_customer_requirement" type="InputText" id="244348791">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Customer Requirement (customer_requirement)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Customer Requirementquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{cancel, Cancel order; delivery, Delivery Info; payment, Payment Info; items, Order Items;}"/>
+<property name="rangeFormula" value="{cancel,Cancel order; delivery,Delivery Info; payment,Payment Info; items,Order Items;}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="outputBinding" value="customer_requirement"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="1" name="p_customer_requirement" type="InputText" id="244348791">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;customerRequirement (p_customer_requirement)quot;"/>
-<property name="readonly" value="false"/>
 <property name="inputBinding" value="customerRequirement"/>
 <property name="outputBinding" value="customerRequirement"/>
 <property name="fieldClass" value="java.lang.String"/>
