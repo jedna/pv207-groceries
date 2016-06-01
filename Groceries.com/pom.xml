@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>PV207</groupId>
   <artifactId>Groceries</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>kjar</packaging>
   <name>Groceries.com</name>
   <description>E-commerce with groceries</description>
