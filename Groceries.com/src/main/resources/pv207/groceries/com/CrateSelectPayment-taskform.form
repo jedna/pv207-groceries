@@ -1,0 +1,14 @@
+
+<form id="204832485">
+<property name="name" value="CrateSelectPayment-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="p_type" type="InputText" id="1603392177">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;type (p_type)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="type"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="type" value="java.lang.String" id="p_type"/>
+</form>
