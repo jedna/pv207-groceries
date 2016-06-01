@@ -30,5 +30,22 @@ public class ProductList implements java.io.Serializable
    {
       this.products = products;
    }
+   
+       @Override
+    public String toString() {
+        java.lang.String result = "";
+        java.lang.Integer numOfItems = 0;
+        java.lang.Double finalPrice = 0d;
+        for (Product p : products) {
+            result+= p.toString();
+            result+= "\n";
+            numOfItems += p.getQuantity();
+            finalPrice = finalPrice + p.getPrice()*p.getQuantity();
+        }
+        result+= "Number of items: ";
+        result = result + numOfItems + "\n";
+        result = result + "Order summary: " + finalPrice;
+        return result;
+    }
 
 }
