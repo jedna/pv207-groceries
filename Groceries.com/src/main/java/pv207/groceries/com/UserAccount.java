@@ -16,8 +16,11 @@ public class UserAccount implements java.io.Serializable
    @org.kie.api.definition.type.Label("Confirmed")
    private java.lang.Boolean confirmed;
 
-   @org.kie.api.definition.type.Label(value = "City")
+   @org.kie.api.definition.type.Label("City")
    private java.lang.String city;
+
+   @org.kie.api.definition.type.Label(value = "Email")
+   private java.lang.String email;
 
    public UserAccount()
    {
@@ -63,13 +66,25 @@ public class UserAccount implements java.io.Serializable
       this.city = city;
    }
 
+   public java.lang.String getEmail()
+   {
+      return this.email;
+   }
+
+   public void setEmail(java.lang.String email)
+   {
+      this.email = email;
+   }
+
    public UserAccount(java.lang.String name, java.lang.String referrer,
-         java.lang.Boolean confirmed, java.lang.String city)
+         java.lang.Boolean confirmed, java.lang.String city,
+         java.lang.String email)
    {
       this.name = name;
       this.referrer = referrer;
       this.confirmed = confirmed;
       this.city = city;
+      this.email = email;
    }
 
 }
