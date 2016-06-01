@@ -1,0 +1,14 @@
+
+<form id="1095276446">
+<property name="name" value="Rating-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="p_rating" type="InputTextInteger" id="606918234">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;rating (p_rating)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="rating"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="rating" value="java.lang.Integer" id="p_rating"/>
+</form>
