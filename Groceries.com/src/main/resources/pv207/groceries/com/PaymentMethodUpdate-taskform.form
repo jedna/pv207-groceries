@@ -5,10 +5,14 @@
 <property name="status" value="0"/>
 <field position="0" name="order_paymentInfo" type="InputText" id="1648339696">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;paymentInfo (order)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Payment Infoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="order/paymentInfo"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="order" name="#0000A0" type="dataModelerEntry" outId="" value="pv207.groceries.com.StoreOrder" id="order"/>
+<dataHolder inputId="order" name="#0000A0" type="dataModelerEntry" outId="order" value="pv207.groceries.com.StoreOrder" id="p_order"/>
 </form>
