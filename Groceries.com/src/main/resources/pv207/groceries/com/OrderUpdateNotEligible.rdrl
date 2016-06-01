@@ -6,7 +6,7 @@ rule "OrderUpdateNotEligible"
 	dialect "mvel"
 	ruleflow-group "order-handling"
 	when
-		o : StoreOrder( locked == false || state == "shipped" || state == "canceled" )
+		o : StoreOrder( locked == true || state == "shipped" || state == "canceled" )
 	then
 		o.setEditable( false );
 end
