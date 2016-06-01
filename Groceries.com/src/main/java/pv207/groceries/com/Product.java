@@ -57,5 +57,9 @@ public class Product implements java.io.Serializable
       this.price = price;
       this.quantity = quantity;
    }
+   
+   public java.lang.String toString(){
+       return "Name: " + name + " " + quantity + "pc. Price: " + price;
+   }
 
 }
