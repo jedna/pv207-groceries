@@ -1,0 +1,62 @@
+
+<form id="1599347535">
+<property name="name" value="Groceries.CustomerPicks-UpCrateOrder-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="p_money" type="InputTextInteger" id="1160104904">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_money (p_money)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_money"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="p_card" type="InputText" id="461235210">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_card (p_card)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_card"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="p_type" type="InputText" id="1387007792">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_type (p_type)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_type"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="p_rating" type="InputTextInteger" id="699181287">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_rating (p_rating)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_rating"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="4" name="p_price" type="InputTextInteger" id="1552880256">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_price (p_price)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_price"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="p_paid" type="CheckBox" id="1397719833">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_paid (p_paid)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_paid"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="p_name" type="InputText" id="519568673">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_name (p_name)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="p_card" value="java.lang.String" id="p_card"/>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="p_money" value="java.lang.Integer" id="p_money"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="p_name" value="java.lang.String" id="p_name"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="p_paid" value="java.lang.Boolean" id="p_paid"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="p_price" value="java.lang.Integer" id="p_price"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="p_rating" value="java.lang.Integer" id="p_rating"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="p_type" value="java.lang.String" id="p_type"/>
+</form>
