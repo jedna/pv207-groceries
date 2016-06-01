@@ -36,7 +36,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("localhost", "25", "test", "test")</identifier>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.redcat.cz", "25", "smtp@q2interactive.cz", "q2smtp")</identifier>
             <parameters/>
             <name>Email</name>
         </work-item-handler>
