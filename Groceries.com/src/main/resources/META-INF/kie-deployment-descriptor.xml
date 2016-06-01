@@ -36,7 +36,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.hkfree.org", "587", "", "")</identifier>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.hkfree.org", "25", "", "")</identifier>
             <parameters/>
             <name>Email</name>
         </work-item-handler>
