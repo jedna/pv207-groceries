@@ -9,13 +9,12 @@
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{cancel,Cancel order; delivery,Delivery Info; payment,Payment Info; items,Order Items;}"/>
+<property name="rangeFormula" value="{cancel,Cancel order;delivery,Delivery Info; payment,Payment Info; items,Order Items}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="inputBinding" value="customerRequirement"/>
 <property name="outputBinding" value="customerRequirement"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="" name="#A7E690" type="basicType" outId="customer_requirement" value="java.lang.String" id="customer_requirement"/>
 <dataHolder inputId="customerRequirement" name="#FF54A7" type="basicType" outId="customerRequirement" value="java.lang.String" id="p_customer_requirement"/>
 </form>
