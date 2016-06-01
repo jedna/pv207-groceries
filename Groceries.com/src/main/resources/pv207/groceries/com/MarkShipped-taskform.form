@@ -1,0 +1,14 @@
+
+<form id="1581330324">
+<property name="name" value="MarkShipped-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="p_shipped" type="CheckBox" id="1373551252">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;shipped (p_shipped)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="shipped"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="shipped" value="java.lang.Boolean" id="p_shipped"/>
+</form>
