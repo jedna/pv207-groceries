@@ -3,14 +3,30 @@
 <property name="name" value="MarkShipped-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="p_shipped" type="CheckBox" id="1373551252">
+<field position="1" name="p_shipped" type="CheckBox" id="1373551252">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Shippedquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Shippedquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="shipped"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="1427683384">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;All items shipped?&lt;/h2&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
 </field>
 <dataHolder inputId="" name="#A7E690" type="basicType" outId="shipped" value="java.lang.Boolean" id="p_shipped"/>
 </form>
